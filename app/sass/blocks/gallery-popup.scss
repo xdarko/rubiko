@@ -15,10 +15,11 @@
 	margin-top: 80px;
 }
 .gallery-popup__image-wrap {
+	text-align: center;
 	background-color: $main-black;
 }
 .gallery-popup__image {
-	width: 100%;
+	max-width: 100%;
 }
 .gallery-popup__desc {
 	padding: 0 15px 10px 15px;
