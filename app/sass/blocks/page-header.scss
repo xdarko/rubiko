@@ -1,0 +1,58 @@
+.page-header {
+	width: 100%;
+	background-color: $bg-white;
+}
+.page-header__inner {
+	@include clearfix();
+}
+.page-header__logo {
+	float: left;
+	padding-top: 20px;
+	margin: 0 0 15px 20px;
+}
+.page-header__humburger {
+	float: right;
+	width: 33px;
+	height: 33px;
+	margin: 15px 20px 0 0;
+	background-color: $main-red;
+	transform: rotate(45deg);
+	overflow: hidden;
+}
+.page-header__humburger-link {
+	display: block;
+	line-height: 33px;
+	font-size: 0;
+	text-align: center;
+	transform: rotate(-45deg);
+	&:after {
+		display: inline-block;
+		vertical-align: middle;
+		content: "\f0c9";
+		font-family: 'FontAwesome';
+		font-size: 20px;
+    	color: #fff;
+		-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+    	transition: transform .2s linear;
+	}
+	&:hover:after {
+		transform: rotate(180deg);
+	}
+	&--active:after {
+		content: "\f00d";
+		font-size: 22px;
+	}
+}
+.page-header__nav {
+	clear: both;
+}
+
+// ----- Media queries -----
+
+@media (min-width: $screen-lg) {
+	.page-header__inner {
+		width: 1180px;
+		margin: 0 auto;
+	}
+}

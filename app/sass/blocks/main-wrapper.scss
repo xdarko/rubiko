@@ -1,0 +1,12 @@
+.main-wrapper {
+	min-width: 480px;
+    min-height: 100%;
+    height: auto;
+    overflow: hidden;
+    
+    &:after {
+    	content: "";
+    	height: 286px; //footer height
+    	display: block;
+    }
+}

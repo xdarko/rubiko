@@ -1,0 +1,485 @@
+extends templates/main.pug
+
+block title
+	title Title
+
+block content
+	.main-wrapper
+		header.page-header
+			.page-header__inner
+				.page-header__logo
+					a.logo(href="#")
+						h1.logo__title rubiko
+				.page-header__humburger
+					a.page-header__humburger-link(href="#")
+			.page-header__nav
+				nav.nav
+					ul.nav__list
+						li.nav__item
+							a.nav__link(href="#main-slider") home
+						li.nav__item
+							a.nav__link(href="#features") features
+						li.nav__item
+							a.nav__link(href="#about") about
+						li.nav__item
+							a.nav__link(href="#portfolio") portfolio
+						li.nav__item
+							a.nav__link(href="#skills") skills
+						li.nav__item
+							a.nav__link(href="#team") team
+						li.nav__item
+							a.nav__link(href="#contact") contact
+		section.main-slider
+			.main-slider__wrap.slider__wrap
+				ul.main-slider__list.slider__slides
+					li.main-slider__item.main-slider__item--1
+						.main-slider__slide-wrap
+							.main-slider__slide-inner
+								h3.main-slider__title.title-main rubiko
+								.main-slider__sub.
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived  not onlyfive centuries, but also the leap into electronic typesetting, remaining!
+					li.main-slider__item.main-slider__item--2
+						.main-slider__slide-wrap
+							.main-slider__slide-inner
+								h3.main-slider__title.title-main adaptive design
+								.main-slider__sub.
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived  not onlyfive centuries, but also the leap into electronic typesetting, remaining!
+					li.main-slider__item.main-slider__item--3
+						.main-slider__slide-wrap
+							.main-slider__slide-inner
+								h3.main-slider__title.title-main lorem ipsum is simply
+								.main-slider__sub.
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived  not onlyfive centuries, but also the leap into electronic typesetting, remaining!
+				.main-slider__nav-item.main-slider__nav-item--show
+					a.main-slider__nav-link.main-slider__nav-link--show(href="#portfolio")
+				.main-slider__nav-item.main-slider__nav-item--prev
+					a.main-slider__nav-link.main-slider__nav-link--prev.slider__prev(href="#")
+				.main-slider__nav-item.main-slider__nav-item--next
+					a.main-slider__nav-link.main-slider__nav-link--next.slider__next(href="#")
+				.main-slider__nav-item.main-slider__nav-item--jump
+					a.main-slider__nav-link.main-slider__nav-link--jump(href="#features")
+		section.features
+			.container
+				h3.features__title.title-main.title-main--black theme features
+				.features__sub.text-main.text-main--black
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+				ul.features__list
+					li.features__item
+						.features__image-wrap
+							.features__image.features__image--icon-1
+						h4.features__item-title unique design
+						.features__item-sub Rubiko easily and efficiently scales your project with one code base, from phones to tablets to desktops.
+					li.features__item
+						.features__image-wrap
+							.features__image.features__image--icon-2
+						h4.features__item-title simple beckend
+						.features__item-sub Rubiko easily and efficiently scales your project with one code base, from phones to tablets to desktops
+					li.features__item
+						.features__image-wrap
+							.features__image.features__image--icon-3
+						h4.features__item-title seo tools
+						.features__item-sub Rubiko easily and efficiently scales your project with one code base, from phones to tablets to desktops
+					li.features__item
+						.features__image-wrap
+							.features__image.features__image--icon-4
+						h4.features__item-title responsive
+						.features__item-sub Rubiko easily and efficiently scales your project with one code base, from phones to tablets to desktops
+					li.features__item
+						.features__image-wrap
+							.features__image.features__image--icon-5
+						h4.features__item-title retina ready
+						.features__item-sub Rubiko easily and efficiently scales your project with one code base, from phones to tablets to desktops
+					li.features__item
+						.features__image-wrap
+							.features__image.features__image--icon-6
+						h4.features__item-title top support
+						.features__item-sub Rubiko easily and efficiently scales your project with one code base, from phones to tablets to desktops
+					li.features__item
+						.features__image-wrap
+							.features__image.features__image--icon-7
+						h4.features__item-title documentation
+						.features__item-sub Rubiko easily and efficiently scales your project with one code base, from phones to tablets to desktops
+		section.about
+			.container
+				h3.about__title.title-main about us
+				.about__sub.text-main.
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining .
+				a.about__logo.logo.logo--sub(href="#")
+					span.about__logo-title.logo__title rubiko
+				ul.about__socials-list
+					li.about__socials-item
+						a.about__socials-link.about__socials-link--fb(href="https://www.facebook.com/" target="_blank") facebook
+					li.about__socials-item
+						a.about__socials-link.about__socials-link--tw(href="https://twitter.com/" target="_blank") twitter
+					li.about__socials-item
+						a.about__socials-link.about__socials-link--db(href="https://dribbble.com/" target="_blank") dribbble
+					li.about__socials-item
+						a.about__socials-link.about__socials-link--tm(href="https://www.tumblr.com/" target="_blank") tumblr
+					li.about__socials-item
+						a.about__socials-link.about__socials-link--ln(href="https://www.linkedin.com/" target="_blank") linkedin
+					li.about__socials-item
+						a.about__socials-link.about__socials-link--pt(href="https://pinterest.com/" target="_blank") pinterest
+				a.jump-section(href="#portfolio")
+					span.jump-section__inner
+		section.portfolio
+			.container
+				h3.portfolio__title.title-main.title-main--black our portfolio
+				.portfolio__nav
+					.portfolio__nav-item
+						a.portfolio__nav-link.portfolio__nav-link--thematic.portfolio__nav-link--active(href="#") all
+					.portfolio__nav-item
+						a.portfolio__nav-link.portfolio__nav-link--thematic(href="#") graphic
+					.portfolio__nav-item
+						a.portfolio__nav-link.portfolio__nav-link--thematic(href="#") logo
+					.portfolio__nav-item
+						a.portfolio__nav-link.portfolio__nav-link--thematic(href="#") website design
+					.portfolio__nav-item
+						a.portfolio__nav-link.portfolio__nav-link--thematic(href="#") photography
+					.portfolio__nav-item
+						a.portfolio__nav-link.portfolio__nav-link--thematic(href="#") branding
+					.portfolio__nav-item
+						a.portfolio__nav-link.portfolio__nav-link--thematic(href="#") illustration
+					.portfolio__nav-item
+						a.portfolio__nav-link.portfolio__nav-link--thematic(href="#") video
+					.portfolio__nav-item.portfolio__grid
+						a.portfolio__nav-link.portfolio__rect(href="#")
+						a.portfolio__nav-link.portfolio__rhomb.portfolio__rhomb--active(href="#")
+				.portfolio__list-wrap
+					ul.portfolio__list.portfolio__list--rhomb
+						li.portfolio__item
+							.portfolio__item-image-wrap
+								img.portfolio__item-image(src="img/vinyl-record.jpg")
+							.portfolio__item-overlay
+							.portfolio__item-title
+								span.portfolio__title-text vinyl record
+							a.portfolio__item-link(href="#")
+								span.portfolio__item-link-inner
+						li.portfolio__item
+							.portfolio__item-image-wrap
+								img.portfolio__item-image(src="img/wooden-logo.jpg")
+							.portfolio__item-overlay
+							.portfolio__item-title
+								span.portfolio__title-text 3d wooden logo
+							a.portfolio__item-link(href="#")
+								span.portfolio__item-link-inner
+						li.portfolio__item
+							.portfolio__item-image-wrap
+								img.portfolio__item-image(src="img/book-mockup.jpg")
+							.portfolio__item-overlay
+							.portfolio__item-title
+								span.portfolio__title-text hard cover book
+							a.portfolio__item-link(href="#")
+								span.portfolio__item-link-inner
+						li.portfolio__item
+							.portfolio__item-image-wrap
+								img.portfolio__item-image(src="img/macbook-air.jpg")
+							.portfolio__item-overlay
+							.portfolio__item-title
+								span.portfolio__title-text macbook air
+							a.portfolio__item-link(href="#")
+								span.portfolio__item-link-inner
+						li.portfolio__item
+							.portfolio__item-image-wrap
+								img.portfolio__item-image(src="img/silver-stamping.jpg")
+							.portfolio__item-overlay
+							.portfolio__item-title
+								span.portfolio__title-text silver stamping
+							a.portfolio__item-link(href="#")
+								span.portfolio__item-link-inner
+						li.portfolio__item
+							.portfolio__item-image-wrap
+								img.portfolio__item-image(src="img/t-shirt.jpg")
+							.portfolio__item-overlay
+							.portfolio__item-title
+								span.portfolio__title-text t-shirt mockup
+							a.portfolio__item-link(href="#")
+								span.portfolio__item-link-inner
+						li.portfolio__item
+							.portfolio__item-image-wrap
+								img.portfolio__item-image(src="img/picjumbo.jpg")
+							.portfolio__item-overlay
+							.portfolio__item-title
+								span.portfolio__title-text fashion glasses
+							a.portfolio__item-link(href="#")
+								span.portfolio__item-link-inner
+						li.portfolio__item
+							.portfolio__item-image-wrap
+								img.portfolio__item-image(src="img/wood.jpg")
+							.portfolio__item-overlay
+							.portfolio__item-title
+								span.portfolio__title-text picjumbo
+							a.portfolio__item-link(href="#")
+								span.portfolio__item-link-inner
+						li.portfolio__item
+							.portfolio__item-image-wrap
+								img.portfolio__item-image(src="img/embossed-leather.jpg")
+							.portfolio__item-overlay
+							.portfolio__item-title
+								span.portfolio__title-text embossed leather
+							a.portfolio__item-link(href="#")
+								span.portfolio__item-link-inner
+						li.portfolio__item
+							.portfolio__item-image-wrap
+								img.portfolio__item-image(src="img/billboard-600.jpg")
+							.portfolio__item-overlay
+							.portfolio__item-title
+								span.portfolio__title-text billboard
+							a.portfolio__item-link(href="#")
+								span.portfolio__item-link-inner
+						li.portfolio__item
+							.portfolio__item-image-wrap
+								img.portfolio__item-image(src="img/macbook.jpg")
+							.portfolio__item-overlay
+							.portfolio__item-title
+								span.portfolio__title-text macbook pro
+							a.portfolio__item-link(href="#")
+								span.portfolio__item-link-inner
+						li.portfolio__item
+							.portfolio__item-image-wrap
+								img.portfolio__item-image(src="img/vintage-car-emblem.jpg")
+							.portfolio__item-overlay
+							.portfolio__item-title
+								span.portfolio__title-text vintage car logo
+							a.portfolio__item-link(href="#")
+								span.portfolio__item-link-inner
+						li.portfolio__item
+							.portfolio__item-image-wrap
+								img.portfolio__item-image(src="img/madebyvadim.jpg")
+							.portfolio__item-overlay
+							.portfolio__item-title
+								span.portfolio__title-text madebyvadim
+							a.portfolio__item-link(href="#")
+								span.portfolio__item-link-inner
+		section.testimonials
+			.container
+				h3.testimonials__title testimonials
+				.testimonials__nav
+					ul.testimonials__nav-list
+				ul.testimonials__list
+					li.testimonials__item.testimonials__item--active
+						.testimonials__content.
+							"If there ever was a team to trust with your PPC management, these are the guys. My advice? Grab your spot before they change their minds."
+						address.testimonials__author Petar Stojakovic, Subotica
+					li.testimonials__item
+						.testimonials__content.
+							"We love the approachable format, and the fact that they chose to feature customers that users can really relate to."
+						address.testimonials__author John Doe, TTTC
+					li.testimonials__item
+						.testimonials__content.
+							"Many companies struggle to grab people's attention using their web pages, but Vadim Postanovkin does a great job of catching your eye as soon as you arrive on the page."
+						address.testimonials__author Ann Jackson, Doors
+					li.testimonials__item
+						.testimonials__content.
+							"It's awesome, really!"
+						address.testimonials__author Bill Gates, Big Company
+					li.testimonials__item
+						.testimonials__content.
+							"Company does a lot right on their pages, but the bread and butter is their geometric design stuff. "
+						address.testimonials__author Robert Del Naja, Massive Attack
+					li.testimonials__item
+						.testimonials__content.
+							"I just had to let you know how pleased we were with our new website! it certainly helped to make our life more special. Thanks again. A big thank you again for this beautiful web site!"
+						address.testimonials__author John Lennon, Music Band
+				a.jump-section(href="#skills")
+					span.jump-section__inner
+		section.skills
+			.container
+				h3.skills__title.title-main.title-main--black our skills
+				.skills__sub.text-main.text-main--black.
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only.
+				ul.skills__list
+					li.skills__item
+						.skills__item-triangle
+						.skills__meter(data-percent="95")
+							.skills__meter-inner
+								span.skills__meter-name html/css
+								span.skills__meter-percent 95%
+					li.skills__item
+						.skills__item-triangle
+						.skills__meter(data-percent="85")
+							.skills__meter-inner
+								span.skills__meter-name responsive web design
+								span.skills__meter-percent 85%
+					li.skills__item
+						.skills__item-triangle
+						.skills__meter(data-percent="65")
+							.skills__meter-inner
+								span.skills__meter-name ios development
+								span.skills__meter-percent 65%
+					li.skills__item
+						.skills__item-triangle
+						.skills__meter(data-percent="90")
+							.skills__meter-inner
+								span.skills__meter-name javascript development
+								span.skills__meter-percent 90%
+					li.skills__item
+						.skills__item-triangle
+						.skills__meter(data-percent="75")
+							.skills__meter-inner
+								span.skills__meter-name consulting
+								span.skills__meter-percent 75%
+		section.statistics
+			.container
+				h3.statistics__title.title-main some cool statistics
+				.statistics__sub.text-main.
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only.
+				ul.statistics__list
+					li.statistics__item
+						.statistics__icon &#xe001
+						.statistics__num 568
+						.statistics__text happy clients
+					li.statistics__item
+						.statistics__icon &#xe009
+						.statistics__num 3578
+						.statistics__text followers on twitter
+					li.statistics__item
+						.statistics__icon &#xe00b
+						.statistics__num 2387
+						.statistics__text friends on facebook
+					li.statistics__item
+						.statistics__icon &#xe006
+						.statistics__num 128
+						.statistics__text awards
+				a.jump-section(href="#team")
+					span.jump-section__inner
+		section.team
+			.container
+				h3.team__title.title-main.title-main--black meet our teem
+				.team__sub.text-main.text-main--black.
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only.
+				.team__slider
+					ul.team__list
+						li.team__item
+							.team__item-inner
+								.team__image.team__image--1
+									.team__image-overlay
+									a.team__image-link.team__image-link--tm(href="https://www.tumblr.com/" target="_blank")
+									a.team__image-link.team__image-link--db(href="https://dribbble.com/" target="_blank")
+									a.team__image-link.team__image-link--ln(href="https://www.linkedin.com/" target="_blank")
+									a.team__image-link.team__image-link--fb(href="https://www.facebook.com/" target="_blank")
+									a.team__image-link.team__image-link--tw(href="https://twitter.com/" target="_blank")
+								.team__role General Manager
+								.team__name Tom Weerd
+								.team__desc.text-main.text-main--black.
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.
+						li.team__item
+							.team__item-inner
+								.team__image.team__image--2
+									.team__image-overlay
+									a.team__image-link.team__image-link--tm(href="https://www.tumblr.com/" target="_blank")
+									a.team__image-link.team__image-link--db(href="https://dribbble.com/" target="_blank")
+									a.team__image-link.team__image-link--ln(href="https://www.linkedin.com/" target="_blank")
+									a.team__image-link.team__image-link--fb(href="https://www.facebook.com/" target="_blank")
+									a.team__image-link.team__image-link--tw(href="https://twitter.com/" target="_blank")
+								.team__role Lead Developer
+								.team__name John Hammond
+								.team__desc.text-main.text-main--black.
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.
+						li.team__item
+							.team__item-inner
+								.team__image.team__image--3
+									.team__image-overlay
+									a.team__image-link.team__image-link--tm(href="https://www.tumblr.com/" target="_blank")
+									a.team__image-link.team__image-link--db(href="https://dribbble.com/" target="_blank")
+									a.team__image-link.team__image-link--ln(href="https://www.linkedin.com/" target="_blank")
+									a.team__image-link.team__image-link--fb(href="https://www.facebook.com/" target="_blank")
+									a.team__image-link.team__image-link--tw(href="https://twitter.com/" target="_blank")
+								.team__role Art Director
+								.team__name Adam Clark
+								.team__desc.text-main.text-main--black.
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.
+						li.team__item
+							.team__item-inner
+								.team__image.team__image--4
+									.team__image-overlay
+									a.team__image-link.team__image-link--tm(href="https://www.tumblr.com/" target="_blank")
+									a.team__image-link.team__image-link--db(href="https://dribbble.com/" target="_blank")
+									a.team__image-link.team__image-link--ln(href="https://www.linkedin.com/" target="_blank")
+									a.team__image-link.team__image-link--fb(href="https://www.facebook.com/" target="_blank")
+									a.team__image-link.team__image-link--tw(href="https://twitter.com/" target="_blank")
+								.team__role Graphic Designer
+								.team__name Isabella Moro
+								.team__desc.text-main.text-main--black.
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.
+					a.team__slider-nav.team__slider-nav--prev(href="#")
+					a.team__slider-nav.team__slider-nav--next(href="#")
+		section.clients
+			.container
+				.h3.clients__title.title-main meet our lovely clients
+				.clients__sub.text-main.
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only.
+				ul.clients__list
+					li.clients__item
+						img.clients__image(src="img/grahpicriver.png")
+					li.clients__item
+						img.clients__logo(src="img/themeforest.png")
+					li.clients__item
+						img.clients__logo(src="img/codecanyon.png")
+					li.clients__item
+						img.clients__logo(src="img/activeden.png")
+				a.jump-section(href="#contact")
+					span.jump-section__inner
+		section.contact
+			.container
+				.h3.contact__title.title-main.title-main--black get in touch
+				.contact__sub.text-main.text-main--black.
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only.
+			.contact__form-wrap
+				form.contact__form(method="POST")
+					.contact__form-groups
+						.contact__form-line
+							input.contact__input.contact__input--name(type="text" placeholder="Name")
+						.contact__form-line
+							input.contact__input.contact__input--email(email="text" placeholder="Email")
+						.contact__form-line
+							input.contact__input.contact__input--subject(type="text" placeholder="Subject")
+						.contact__form-line
+							textarea.contact__input.contact__input--message(type="text" placeholder="Your Message")
+					.contact__address
+						.contact__address-inner
+							.contact__address-title Rubiko Digital Agency
+							.contact__address-text
+								.contact__address-text-inner 111 Fifth Avenue, 34th Floor
+								.contact__address-text-inner New York, United States
+							a.contact__address-link(href="mailto:hello@rubiko.com") hello@rubiko.com
+							a.contact__address-link(href="tel:+098765432100") 0987 6543 2100
+					.contact__form-control.contact__form-control--send
+						input.contact__form-btn.contact__form-btn--submit(type="submit" value="SEND")
+					.contact__form-control.contact__form-control--reset
+						input.contact__form-btn.contact__form-btn--reset(type="reset" value="RESET")
+	footer.page-footer
+		.container
+			.page-footer__logo
+				a.logo.logo--sub(href="#")
+					span.logo__title rubiko
+			.page-footer__copyright.
+				Copyright © 2016. Rubiko Studio. All Rights Reserved.
+			ul.about__socials-list
+				li.page-footer__socials-item
+					a.page-footer__socials-link.page-footer__socials-link--fb(href="https://www.facebook.com/" target="_blank") facebook
+				li.page-footer__socials-item
+					a.page-footer__socials-link.page-footer__socials-link--tw(href="https://twitter.com/" target="_blank") twitter
+				li.page-footer__socials-item
+					a.page-footer__socials-link.page-footer__socials-link--db(href="https://dribbble.com/" target="_blank") dribbble
+				li.page-footer__socials-item
+					a.page-footer__socials-link.page-footer__socials-link--tm(href="https://www.tumblr.com/" target="_blank") tumblr
+				li.page-footer__socials-item
+					a.page-footer__socials-link.page-footer__socials-link--ln(href="https://www.linkedin.com/" target="_blank") linkedin
+				li.page-footer__socials-item
+					a.page-footer__socials-link.page-footer__socials-link--pt(href="https://pinterest.com/" target="_blank") pinterest
+	.gallery-popup
+		.container
+			.gallery-popup__content
+				.gallery-popup__image-wrap
+					img.gallery-popup__image
+				.gallery-popup__desc.
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500!
+				a.gallery-popup__link.gallery-popup__prev(href="#")
+				a.gallery-popup__link.gallery-popup__next(href="#")
+				a.gallery-popup__link.gallery-popup__close(href="#")
+				a.gallery-popup__link.gallery-popup__socials-trigger(href="#")
+				a.gallery-popup__link.gallery-popup__socials.gallery-popup__socials--fb(href="https://www.facebook.com/" target="_blank") facebook
+				a.gallery-popup__link.gallery-popup__socials.gallery-popup__socials--tw(href="https://twitter.com/" target="_blank") twitter
+				a.gallery-popup__link.gallery-popup__socials.gallery-popup__socials--db(href="https://dribbble.com/" target="_blank") dribbble
+				a.gallery-popup__link.gallery-popup__socials.gallery-popup__socials--ln(href="https://www.linkedin.com/" target="_blank") linkedin
+				a.gallery-popup__link.gallery-popup__socials.gallery-popup__socials--pt(href="https://pinterest.com/" target="_blank") pinterest

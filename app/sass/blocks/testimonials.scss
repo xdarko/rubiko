@@ -1,0 +1,77 @@
+.testimonials {
+	position: relative;
+	padding: 100px 0 55px;
+	background: url("../img/testimonials-bg.jpg") center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.testimonials__title {
+	margin: 0;
+	font-family: $exo2_0-black;
+	font-size: $font-l;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+.testimonials__nav {
+	text-align: center;
+	margin-bottom: 16px;
+}
+.testimonials__nav-list {
+	@include clearfix();
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.testimonials__nav-item {
+	float: left;
+	height: 8px;
+	width: 8px;
+	margin-left: 10px;
+	border: 1px solid $bg-white;
+	transform: rotate(45deg);
+	transition: background-color .2s linear;
+	&:first-child {
+		margin-left: 0;
+	}
+	&--active {
+		background-color: $bg-white;
+	}
+}
+.testimonials__nav-link {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.testimonials__list {
+	position: relative;
+	min-height: 140px;
+	margin: 0 0 60px 0;
+	padding: 0;
+	list-style: none;
+}
+.testimonials__item {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	cursor: pointer;
+}
+.testimonials__content {
+	margin-bottom: 20px;
+	font-family: $openSans-light;
+	font-size: $title-m;
+	color: $bg-white;
+	text-align: center;
+}
+.testimonials__author {
+	font-family: $openSans-lightItalic;
+	font-size: $font-m;
+	color: #a1a1a1;
+	text-align: center;
+	&:before {
+		font-family: 'Simple-Line-Icons';
+		content: "\e028 \00a0 \00a0 \00a0"; // adding spaces after icon
+	}
+}

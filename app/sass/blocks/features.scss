@@ -1,0 +1,98 @@
+.features {
+	padding: 100px 0 55px;
+	background: $bg-white url("../img/bg_dots_black.png") repeat;
+}
+.features__title {
+	text-transform: uppercase;
+}
+.features__sub {
+	margin-bottom: 60px;
+}
+.features__list {
+	margin: 0 0 0 -20px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	font-size: 0;
+}
+.features__item {
+	display: inline-block;
+	width: 210px;
+	margin-left: 20px;
+	text-align: center;
+	cursor: default;
+	&:hover .features__image-wrap {
+		transform: rotate(0deg);
+	}
+	&:hover .features__image {
+		transform: rotate(0deg);
+	}
+	&:hover .features__image:after {
+		font-size: 50px;
+	}
+}
+.features__image-wrap {
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	margin: 20px 20px 0 0;
+	background-color: $main-red;
+	transform: rotate(45deg);
+	overflow: hidden;
+	transition: transform .2s linear;
+}
+.features__image {
+	display: block;
+	line-height: 75px;
+	font-size: 0;
+	text-align: center;
+	transform: rotate(-45deg);
+	&:after {
+		display: inline-block;
+		vertical-align: middle;
+		content: "";
+		font-family: 'Simple-Line-Icons';
+		font-size: 36px;
+    	color: #fff;
+		-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+    	transition: font-size .3s linear;
+	}
+	&--icon-1:after {
+		content: "\e02b";
+	}
+	&--icon-2:after {
+		content: "\e06c";
+	}
+	&--icon-3:after {
+		content: "\e06b";
+	}
+	&--icon-4:after {
+		content: "\e010";
+	}
+	&--icon-5:after {
+		content: "\e032";
+	}
+	&--icon-6:after {
+		content: "\e007";
+	}
+	&--icon-7:after {
+		content: "\e034";
+	}
+}
+.features__item-title {
+	position: relative;
+	margin-bottom: 6px;
+	font-family: $exo2_0-black;
+	font-size: $title-m;
+	text-align: center;
+	text-transform: uppercase;
+	color: $main-black;
+}
+.features__item-sub {
+	margin-bottom: 50px;
+	font-family: $openSans-light;
+	font-size: $font-m;
+	color: $main-black;
+	text-align: center;
+}

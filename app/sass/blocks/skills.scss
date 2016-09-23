@@ -1,0 +1,85 @@
+.skills {
+	position: relative;
+	padding: 100px 0 55px; 
+	background: $bg-white url("../img/bg_dots_black.png") repeat;
+}
+.skills__title {
+	text-transform: uppercase;
+}
+.skills__sub {
+	margin-bottom: 50px;
+}
+.skills__list {
+	margin: 0 0 50px 0;
+	padding: 0;
+	list-style: none;
+}
+.skills__item {
+	position: relative;
+	margin-bottom: 18px;
+	padding-right: 21px;
+	overflow: hidden;
+}
+.skills__item-triangle {
+	position: absolute;
+	z-index: 1;
+	width: 0;
+	height: 0;
+	right: 0;
+	border-style: solid;
+	border-width: 21px 0 21px 21px;
+	border-color: $bg-white transparent $bg-white transparent;
+	&:after {
+		position: absolute;
+		content: "";
+		width: 29px;
+		height: 29px;
+		top: -15px;
+		left: -37px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: $main-red $main-red transparent transparent;
+		transform: rotate(45deg);
+	}
+}
+.skills__meter {
+	position: relative;
+	height: 41px;
+	border-style: solid;
+	border-color: $main-red;
+	border-width: 1px 0 1px 1px;
+}
+.skills__meter-inner {
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	background-color: $main-red;
+	transition: width .8s ease;
+	&:after {
+		position: absolute;
+		content: "";
+		width: 0;
+		height: 0;
+		right: -20px;
+		border-style: solid;
+		border-width: 21px 0 21px 21px;
+		border-color: transparent transparent transparent $main-red;
+	}
+}
+.skills__meter-name {
+	position: absolute;
+	left: 12px;
+	line-height: 42px;
+	font-family: $exo2_0-black;
+	font-size: 15px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.skills__meter-percent {
+	position: absolute;
+	right: 6px;
+	line-height: 42px;
+	font-family: $exo2_0-black;
+	font-size: 15px;
+	color: #fff;
+}

@@ -1,0 +1,42 @@
+.statistics {
+	position: relative;
+	padding: 100px 0 55px;
+	background: url("../img/statistics-bg.jpg") center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.statistics__title {
+	text-transform: uppercase;
+}
+.statistics__sub {
+	margin-bottom: 60px;
+}
+.statistics__list {
+	margin: 0 0 20px 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+	text-align: center;
+}
+.statistics__item {
+	display: inline-block;
+	width: 210px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.statistics__icon {
+	font-family: "Simple-Line-Icons";
+	font-size: 64px;
+	color: #fff;
+}
+.statistics__num {
+	font-family: $exo2_0-black;
+	font-size: $condensed-l;
+	color: $main-red;
+}
+.statistics__text {
+	font-family: $openSans-light;
+	font-size: $font-s;
+	color: $bg-white;
+	text-transform: uppercase;
+}

@@ -1,0 +1,9 @@
+.text-main {
+	font-family: $openSans-light;
+	font-size: $font-m;
+	color: #fff;
+	text-align: center;
+	&--black {
+		color: $main-black;
+	}
+}

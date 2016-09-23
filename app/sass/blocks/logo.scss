@@ -1,0 +1,34 @@
+.logo {
+	position: relative;
+	display: inline-block;
+	padding-left: 37px;
+	text-decoration: none;
+	&:before {
+		position: absolute;
+		width: 33px;
+		height: 27px;
+		left: 0;
+		top: 50%;
+		margin-top: -13px;
+		content: "";
+		background: url("../img/sprite.png");
+	}
+	&:hover:before {
+		background-position: -33px 0;
+	}
+	&:hover .logo__title {
+		color: $main-red;
+	}
+	&--sub:before {
+		background-position: -66px 0;
+	}
+	&--sub .logo__title {
+		color: #b6b6b6;
+	}
+}
+.logo__title {
+	font-family: $exo2_0-black;
+	font-size: $font-s;
+	color: $main-black;
+	text-transform: uppercase;
+}

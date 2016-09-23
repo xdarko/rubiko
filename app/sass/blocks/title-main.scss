@@ -1,0 +1,26 @@
+.title-main {
+	position: relative;
+	margin: 0 0 18px 0;
+	padding-bottom: 25px;
+	font-family: $exo2_0-black;
+	font-size: $font-l;
+	text-align: center;
+	color: #fff;
+	&:after {
+		position: absolute;
+		display: block;
+		width: 47px;
+		height: 11px;
+		bottom: 0;
+		left: 50%;
+		margin-left: -23px;
+		content: "";
+		background: url("../img/sprite.png") 0 -28px;
+	}
+	&--black {
+		color: $main-black;
+		&:after {
+			background: url("../img/sprite.png") 0 -40px;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+.jump-section {
+	position: absolute;
+	z-index: 99;
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	bottom: -92px;
+	left: 50%;
+	margin-left: -38px;
+	background-color: $main-red;
+	text-decoration: none;
+	transform: rotate(45deg);
+	overflow: hidden;
+	transition: background-color .2s linear;
+	&:hover {
+		background-color: #ca0101;
+	}
+	&:hover .jump-section__inner:after {
+		margin: 12px -7px 0 0;
+	}
+}
+.jump-section__inner {
+	display: block;
+	line-height: 75px;
+	font-size: 0;
+	text-align: center;
+	transform: rotate(-45deg);
+	&:after {
+		display: inline-block;
+		margin: 3px 0 0 0;
+		vertical-align: middle;
+		content: "\f107";
+		font-family: 'FontAwesome';
+		font-size: 40px;
+    	color: #fff;
+		-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+    	transition: margin .2s linear;
+	}
+}

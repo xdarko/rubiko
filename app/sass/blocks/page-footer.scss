@@ -1,0 +1,86 @@
+.page-footer {
+	height: 286px;
+	min-width: 480px;
+	margin-top: -286px;
+
+	padding-top: 60px;
+	background-color: $main-black;
+}
+.page-footer__logo {
+	margin-bottom: 16px;
+	text-align: center;
+}
+.page-footer__copyright {
+	margin-bottom: 40px;
+	font-family: $openSans-light;
+	font-size: $font-s;
+	color: #969696;
+	text-align: center;
+}
+.page-footer__socials-list {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.page-footer__socials-item {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	margin: 0 15px 30px 15px;
+	background-color: #4d4d4d;
+	border: 1px solid #fff;
+	transform: rotate(45deg);
+	overflow: hidden;
+	transition: transform .2s linear;
+	&:hover {
+		transform: rotate(0deg);
+	}
+	&:hover .page-footer__socials-link {
+		transform: rotate(0deg);
+	}
+	&:hover .page-footer__socials-link:after {
+		color: #1ab4ef;
+	}
+}
+.page-footer__socials-link {
+	display: block;
+	line-height: 36px;
+	font-size: 0;
+	text-align: center;
+	text-decoration: none;
+	transform: rotate(-45deg);
+	&:after {
+		display: inline-block;
+		vertical-align: middle;
+		content: "";
+		font-family: 'FontAwesome';
+		font-size: 20px;
+    	color: #fff;
+		-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+    	transition: font-size .3s linear;
+	}
+	&--fb:after {
+		content: "\f09a";
+		margin-left: -2px;
+	}
+	&--tw:after {
+		content: "\f099";
+	}
+	&--db:after {
+		content: "\f17d";
+	}
+	&--tm:after {
+		content: "\f173";
+		margin-right: -2px;
+	}
+	&--ln:after {
+		content: "\f0e1";
+		margin-right: -4px;
+		margin-top: -3px;
+	}
+	&--pt:after {
+		content: "\f0d2";
+		margin-right: -4px;
+	}
+}
