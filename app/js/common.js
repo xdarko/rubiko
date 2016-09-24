@@ -133,7 +133,8 @@ var mainNav = (function() {
 	var headerSection = $('.page-header'),
 		humburger     = headerSection.find('.page-header__humburger'),
 		humburgerLink = humburger.find('.page-header__humburger-link'),
-		navMenu       = headerSection.find('.nav');
+		navMenu       = headerSection.find('.nav'),
+		navLinks      = navMenu.find('.nav__link');
 
 	function _setupListeners() {
 		humburgerLink.on('click', function(e) {
@@ -143,6 +144,15 @@ var mainNav = (function() {
 				return;
 			}
 			_showMenu();
+		});
+		navLinks.on('click', function(e) {
+			e.preventDefault();
+			var anchorLink = $(this).attr('href');
+
+			navMenu.css('display', 'none');
+			humburgerLink.removeClass('page-header__humburger-link--active');
+			scroll.to(anchorLink);
+
 		});
 	}
 
@@ -168,54 +178,48 @@ var mainNav = (function() {
 
 // ------------ Section Jumps Module ------------
 
-(function() {
-	
-	var mainMenu       = $('.nav'),
-		mainMenuLinks  = mainMenu.find('.nav__link'),
-		sectionJumpers = $('.jump-section'),
-		pageHeader     = $('.page-header'),
-		mainSlider     = $('.main-slider'),
+var scroll = (function() {
+
+	var mainSlider     = $('.main-slider'),
 		sliderShowLink = mainSlider.find('.main-slider__nav-link--show'),
-		sliderJumpLink = mainSlider.find('.main-slider__nav-link--jump');
+		sliderJumpLink = mainSlider.find('.main-slider__nav-link--jump'),
+		sectionJumpers = $('.jump-section');
 
 	function _setupListeners() {
-		mainMenuLinks.on('click', function(e) {
-			e.preventDefault();
-			var $this = $(this);
-			mainMenu.css('display', 'none');
-			_jumpTo($this.attr('href'));
-		});
 		sectionJumpers.on('click', function(e) {
 			e.preventDefault();
 			var $this = $(this);
-			_jumpTo($this.attr('href'));
+			to($this.attr('href'));
 		});
 		sliderShowLink.on('click', function(e) {
 			e.preventDefault();
 			var $this = $(this);
-			_jumpTo($this.attr('href'));
+			to($this.attr('href'));
 		});
 		sliderJumpLink.on('click', function(e) {
 			e.preventDefault();
 			var $this = $(this);
-			_jumpTo($this.attr('href'));
+			to($this.attr('href'));
 		});
 	}
 
-	function _jumpTo(anchorLink) {
+	function to(anchorLink) {
 		var targetString = anchorLink.substring(1),
 			targetNode   = $('.' + targetString);
-			console.log(targetNode.offset().top);
 		$('html, body').animate({
         	scrollTop: targetNode.offset().top
     	}, 500);
 	}
 
-	function init() {
+	function _init() {
 		_setupListeners();
 	}
 
-	init();
+	_init();
+
+	return {
+		to: to
+	}
 
 }());
 
