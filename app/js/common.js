@@ -39,13 +39,13 @@ $.fn.slider = function(options) {
 	this.createPagination = function() { // add list items and links to pagination list
 		if (!pagination.length) { return; }  // only if pagination is needed
 
-		var fragment = document.createDocumentFragment();
+		var fragment = $(document.createDocumentFragment());
 
 		for (var i = 0; i < slidesCount; i++) {
-			var pagItem = document.createElement('li');
+			var pagItem = $(document.createElement('li'));
 			pagItem.addClass(options.pagItemClass);
 
-			var pagLink = document.createElement('a');
+			var pagLink = $(document.createElement('a'));
 			pagLink.addClass(options.pagLinkClass);
 			pagLink.attr('data-slide', i);
 
@@ -53,7 +53,7 @@ $.fn.slider = function(options) {
 			fragment.append(pagItem);
 		}
 		pagination.append(fragment);
-		pagination.children()[currentSlideIndex].find('a').addClass('active');
+		pagination.children().eq(currentSlideIndex).find('a').addClass('active');
 	};
 
 	this.render = function() {
@@ -62,7 +62,7 @@ $.fn.slider = function(options) {
 
 		if (pagination.length) {
 			pagination.find('.active').removeClass('active');
-			pagination.children()[currentSlideIndex].find('a').addClass('active');
+			pagination.children().eq(currentSlideIndex).find('a').addClass('active');
 		}
 	};
 
@@ -86,7 +86,7 @@ $.fn.slider = function(options) {
 		if(pagination) {
 			pagination.on('click', function(e) {
 				e.preventDefault();
-				var target = e.target;
+				var target = $(e.target);
 				if (target.prop("tagName") !== 'A') { return; }
 
 				clearInterval(timer);
