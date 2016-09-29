@@ -1,10 +1,10 @@
 .page-footer {
 	height: 286px;
-	min-width: 480px;
+	min-width: 440px;
 	margin-top: -286px;
-
 	padding-top: 60px;
 	background-color: $main-black;
+	overflow: hidden;
 }
 .page-footer__logo {
 	margin-bottom: 16px;
