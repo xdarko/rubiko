@@ -1,6 +1,6 @@
 'use strict';
 
-// ------------ jQuery Slider Plugin ------------
+// ------------ Slider ------------
 
 $.fn.slider = function(options) {
 	
@@ -121,8 +121,10 @@ $.fn.slider = function(options) {
 	this.init();
 }
 
+// ------------ END Slider ------------
+
+
 $('.main-slider').slider({
-	selector: '.main-slider',
 	slideStyle: 'horizontal',
 	duration: 0.4
 });
@@ -490,9 +492,7 @@ var galleryPopup = (function() {
 
 	function show(portfolioItem) {
 		gallery.addClass('gallery-popup--active');
-		var currentImageUrl = portfolioItem.
-			find('.portfolio__item-image').
-			attr('src');
+		var currentImageUrl = 'img/' + portfolioItem.data('image');
 		galleryImage.attr('src', currentImageUrl);
 
 		currentPortfolioList = portfolioItem.parent();
@@ -520,9 +520,7 @@ var galleryPopup = (function() {
 
 	function _render() {
 		currentPortfolioItem = currentPortfolioList.children().eq(currentPortfolioIndex);
-		var nextImageUrl = currentPortfolioItem.
-			find('.portfolio__item-image').
-			attr('src');
+		var nextImageUrl = 'img/' + currentPortfolioItem.data('image');
 		galleryImage.attr('src', nextImageUrl);
 	}
 
