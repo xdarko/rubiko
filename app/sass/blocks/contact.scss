@@ -16,7 +16,7 @@
 }
 .contact__form {
 	position: relative;
-	display: inline-block;
+	display: block;
 	width: 826px;
 	height: 826px;
 	left: 50%;
@@ -34,8 +34,8 @@
 	text-align: center;
 }
 .contact__form-line {
-	border-width: 1px;
 	margin-top: -1px;
+	border-width: 1px;
 	border-style: solid;
 	border-color: #4e4e4e transparent #4e4e4e transparent;
 	text-align: center;
